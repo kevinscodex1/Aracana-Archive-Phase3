@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+@layer components {
+    /* side-bar */
+    .sidebar-icon {
+      @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-secondary text-primary hover:bg-primary hover:text-secondary rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    }
+    .tooltip-home {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-user-profile {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-about {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-plans {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-download {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-contactus {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-logout {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-dark {
+      @apply absolute w-auto p-2 m-2 ml-3 min-w-max left-14 rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    /* botbar */
+    .botbar-icon {
+      @apply relative flex items-center justify-center h-12 w-12 shadow-lg bg-secondary text-primary hover:bg-primary hover:text-secondary rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    }
+    .tooltip-bot-home {
+      @apply absolute w-auto p-2 min-w-max  rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-bottom;
+    }
+    .tooltip-bot-user-profile {
+      @apply absolute w-auto p-2 min-w-max rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-about {
+      @apply absolute w-auto p-2 min-w-max rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-plans {
+      @apply absolute w-auto p-2 min-w-max rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-download {
+      @apply absolute w-auto p-2 min-w-max rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-contactus {
+      @apply absolute w-auto p-2 min-w-max rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-logout {
+      @apply absolute w-auto p-2 min-w-max  rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    .tooltip-bot-dark {
+      @apply absolute w-auto p-2 min-w-max  rounded-md shadow-md text-primary bg-secondary text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+  }
+  #nav {
+    z-index: 2;
+  }
+  #userdash {
+    z-index: -1;
+  }
+  #circle {
+    background-color: #f0ad4e;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    top: 70px;
+    left: 170px;
+  }
+  #avatar {
+    top: 70px;
+    left: 350px;
+  }
+  #edit-user {
+    left: 550px;
+    top: 70px;
+  }
+  label {
+    width: 120px;
+    display: inline-block;
+  }
+  #user-info {
+    left: 100px;
+    top: 400px;
+  }
+  * {
+    font-family: montserrat, sans-serif;
+  }
+  /* sidebar tooltip */
+  .tooltip-home {
+    top: 135px;
+  }
+  .tooltip-user-profile {
+    top: 233px;
+  }
+  .tooltip-about {
+    top: 327px;
+  }
+  .tooltip-plans {
+    top: 423px;
+  }
+  .tooltip-download {
+    top: 518px;
+  }
+  .tooltip-contactus {
+    top: 616px;
+  }
+  .tooltip-logout {
+    top: 711px;
+  }
+  .tooltip-dark {
+    top: 808px;
+  }
+  /* botbar tooltip */
+  .tooltip-bot-home {
+    bottom: 70px;
+    left: 58px;
+  }
+  .tooltip-bot-user-profile {
+    bottom: 70px;
+    left: 78px;
+  }
+  .tooltip-bot-about {
+    bottom: 70px;
+    left: 130px;
+  }
+  
+  .tooltip-bot-plans {
+    bottom: 70px;
+    left: 168px;
+  }
+  .tooltip-bot-download {
+    bottom: 70px;
+    left: 190px;
+  }
+  .tooltip-bot-contactus {
+    bottom: 70px;
+    left: 225px;
+  }
+  .tooltip-bot-logout {
+    bottom: 70px;
+    left: 270px;
+  }
+  .tooltip-bot-dark {
+    bottom: 70px;
+    left: 310px;
+  }
+  
+  .display-none {
+    @apply hidden;
+  }
+  /* adminsidebar */
+  .home {
+    top: 123px;
+  }
+  .admin {
+    top: 200px;
+  }
+  .usercircle {
+    top: 110px;
+  }
+  
+  .about {
+    top: 277px;
+  }
+  .infocircle {
+    top: 190px;
+  }
+  .plans {
+    top: 357px;
+  }
+  .bookopen {
+    top: 270px;
+  }
+  .download {
+    top: 440px;
+  }
+  .cloud {
+    top: 350px;
+  }
+  .contact {
+    top: 518px;
+  }
+  .chat {
+    top: 430px;
+  }
+  .logout {
+    top: 598px;
+  }
+  .user {
+    top: 510px;
+  }
+  .mode {
+    top: 590px;
+  }
+  .theme {
+    top: 678px;
+  }
+  
+  @layer utilities {
+    .boxshadow {
+        box-shadow: 0 0 5px #f59e0b,
+        0 0 25px #f59e0b,
+        0 0 50px #f59e0b,
+        0 0 100px 
+    }
+    .glow{
+        @apply text-[#f59e0b]  tracking-[4px] text-[16px]
+        border-2 border-[#f59e0b] px-[22px] py-[7px]
+        rounded
+    }
+    .glow:hover{
+        @apply text-black bg-[#f59e0b] boxshadow
+    } 
+    .glowlink:hover{
+        @apply text-white bg-[#f59e0b] boxshadow
+    } 
+    }
+    @layer utilities {
+           /* .box::before{
+        @apply content-[''] absolute bg-[conic-gradient(#04b0ee_20deg,
+        transparent_120deg)] w-[300px] h-[300px] top-[-25%] left-[25%]
+    }
+            .box::after{
+        @apply content-['tailwind']
+        text-white w-[94%] h-[94%] bg[#020223] absolute top-[3%]
+        left-[3%] flex justify-center items-center uppercase 
+        tracking-[2px] font-medium
+    } */
+
+    .box1shadow {
+        box-shadow: 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px;
+      }
+      
+    }
+    
